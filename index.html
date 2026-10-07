@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Creative with Zen — thoughtful digital products at the intersection of design and technology.">
+  <title>Creative with Zen — Design & Technology</title>
+  <style>
+    :root{
+      --bg:#f5f3ee;
+      --text:#151515;
+      --muted:#6d6a63;
+      --line:#d9d5cc;
+      --card:#ebe8e0;
+      --accent:#171717;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+    nav{
+      height:82px;display:flex;align-items:center;justify-content:space-between;
+      border-bottom:1px solid var(--line);
+    }
+    .brand{font-weight:700;letter-spacing:-.03em;font-size:18px}
+    .navlinks{display:flex;gap:28px;font-size:14px;color:var(--muted)}
+    .navlinks a:hover{color:var(--text)}
+    .hero{padding:112px 0 128px;max-width:930px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);
+      margin-bottom:28px;
+    }
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--text)}
+    h1{
+      font-size:clamp(56px,8.5vw,112px);line-height:.92;
+      letter-spacing:-.075em;margin:0 0 34px;font-weight:650;
+    }
+    .hero p{
+      max-width:650px;font-size:20px;line-height:1.55;color:var(--muted);margin:0;
+    }
+    .cta-row{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap}
+    .button{
+      display:inline-flex;align-items:center;justify-content:center;
+      min-height:46px;padding:0 20px;border:1px solid var(--text);
+      border-radius:999px;font-size:14px;font-weight:600;
+    }
+    .button.primary{background:var(--text);color:white}
+    .button.secondary{background:transparent}
+    section{padding:84px 0;border-top:1px solid var(--line)}
+    .section-grid{display:grid;grid-template-columns:1fr 2fr;gap:60px}
+    .label{
+      font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);
+    }
+    .statement{
+      font-size:34px;line-height:1.18;letter-spacing:-.04em;margin:0;
+    }
+    .body-copy{font-size:17px;line-height:1.7;color:var(--muted);margin:18px 0 0;max-width:690px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}
+    .card{
+      min-height:220px;background:var(--card);border:1px solid var(--line);
+      border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;
+    }
+    .card-number{font-size:12px;color:var(--muted)}
+    .card h3{font-size:21px;letter-spacing:-.03em;margin:0 0 9px}
+    .card p{font-size:14px;line-height:1.55;color:var(--muted);margin:0}
+    .about-list{display:grid;gap:0;border-top:1px solid var(--line);margin-top:38px}
+    .row{
+      display:grid;grid-template-columns:180px 1fr;gap:30px;
+      padding:20px 0;border-bottom:1px solid var(--line);
+      font-size:15px;
+    }
+    .row span:first-child{color:var(--muted)}
+    .contact{
+      padding:120px 0 110px;
+    }
+    .contact h2{
+      font-size:clamp(44px,6vw,78px);line-height:.95;letter-spacing:-.065em;
+      margin:0 0 30px;max-width:800px;
+    }
+    footer{
+      border-top:1px solid var(--line);padding:26px 0 34px;
+      display:flex;justify-content:space-between;gap:20px;
+      color:var(--muted);font-size:12px;
+    }
+    @media(max-width:760px){
+      .wrap{padding:0 20px}
+      nav{height:70px}
+      .navlinks{gap:15px}
+      .navlinks a:nth-child(2){display:none}
+      .hero{padding:82px 0 92px}
+      .hero p{font-size:17px}
+      section{padding:64px 0}
+      .section-grid{grid-template-columns:1fr;gap:28px}
+      .statement{font-size:28px}
+      .cards{grid-template-columns:1fr}
+      .card{min-height:180px}
+      .row{grid-template-columns:1fr;gap:8px}
+      .contact{padding:82px 0}
+      footer{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <a class="brand" href="#">Creative with Zen</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" style="border-top:0">
+      <div class="eyebrow"><span class="dot"></span> Design × Technology</div>
+      <h1>Thoughtful digital products, made with intention.</h1>
+      <p>
+        Creative with Zen is an independent space for exploring and building
+        digital experiences where clear design, useful technology, and human
+        needs come together.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="#about">Explore</a>
+        <a class="button secondary" href="mailto:hello@creativewithzen.my.id">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-grid">
+        <div class="label">About</div>
+        <div>
+          <p class="statement">
+            Design is not decoration. It is how an idea becomes understandable,
+            useful, and worth using.
+          </p>
+          <p class="body-copy">
+            Creative with Zen focuses on digital product thinking, UI/UX,
+            interaction, and the details that make technology feel natural.
+            The work sits between visual design and implementation, with a
+            particular interest in Apple platforms and modern digital products.
+          </p>
+          <div class="about-list">
+            <div class="row"><span>Focus</span><span>UI/UX · Product Design · Interaction</span></div>
+            <div class="row"><span>Technology</span><span>SwiftUI · Apple platforms · Front-end</span></div>
+            <div class="row"><span>Experience</span><span>3+ years in digital product design</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="section-grid">
+        <div class="label">Approach</div>
+        <div>
+          <p class="statement">From the problem to the pixels — and beyond.</p>
+          <div class="cards">
+            <article class="card">
+              <span class="card-number">01</span>
+              <div>
+                <h3>Understand</h3>
+                <p>Start with the people, context, and problem before jumping to a solution.</p>
+              </div>
+            </article>
+            <article class="card">
+              <span class="card-number">02</span>
+              <div>
+                <h3>Design</h3>
+                <p>Turn complexity into clear interfaces, interactions, and product experiences.</p>
+              </div>
+            </article>
+            <article class="card">
+              <span class="card-number">03</span>
+              <div>
+                <h3>Build</h3>
+                <p>Think beyond static screens and collaborate closely with technology and implementation.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="label">Contact</div>
+      <h2>Have an idea worth exploring?</h2>
+      <a class="button primary" href="mailto:hello@creativewithzen.my.id">hello@creativewithzen.my.id ↗</a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 Creative with Zen</span>
+    <span>Design & technology</span>
+  </footer>
+</body>
+</html>
